@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Odin Project Pratice</title>
+    <meta charset="UTF-8" />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- Internal CSS -->
+    <style>
+      div {
+        color: white;
+        background-color: black;
+      }
+
+      p {
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>CSS Foundations</h1>
+    <h2>Selectors</h2>
+    <h3>Universal Selector</h3>
+    <p>* { color: purple; }</p>
+    <h3>Type Selector / Element selector</h3>
+    <div>Hello, World!</div>
+    <div>Hello again!</div>
+    <p>Hi...</p>
+    <div>Okay, bye.</div>
+    <h3>Class Selector</h3>
+    <div class="alert-text">Please agree to our terms of service.</div>
+    <h3>ID Selector</h3>
+    <div id="title">My Awesome 90's Page</div>
+    <h3>Grouping Selector</h3>
+    <div class="read">Read</div>
+    <div class="unread">Unread</div>
+    <h3>Chaining Selector</h3>
+    <div>
+      <div class="subsection header">Latest Posts</div>
+      <p class="subsection preview">
+        This is where a preview for a post might go.
+      </p>
+    </div>
+    <h3>Descendant Combinator</h3>
+    <!-- A -->
+    <div class="ancestor">
+      <!-- B -->
+      Select
+      <!-- C -->
+      <div class="contents">
+        Select
+        <div class="contents">Select</div>
+      </div>
+    </div>
+
+    <!-- D -->
+    <div class="contents">Select</div>
+    <h2>Properties</h2>
+    <h3>color and background-color</h3>
+    <p>This is where a preview for a post might go.</p>
+    <h3>Typography Basics and text-align</h3>
+    <h4>font-family</h4>
+    <p class="font-family">This is where a preview for a post might go.</p>
+    <h4>font-size</h4>
+    <p class="font-size">This where a preview for a post might go.</p>
+    <h4>font-weight</h4>
+    <p class="font-weight">This where a preview for a post might go.</p>
+    <h4>text-align</h4>
+    <p class="text-align">This where a preview for a post might go.</p>
+    <h4>Image Height and Width</h4>
+    <img src="../basic/images/dog.jpg" />
+    <h2>The Cascade of CSS</h2>
+    <h3>Specificity</h3>
+    <div class="main">
+      <div class="subsection list">Example 1</div>
+    </div>
+    <div class="main">
+      <div id="subsection" class="list">Example 2</div>
+    </div>
+    <div id="subsection">
+      <div class="main">
+        <div class="list">Example 3</div>
+      </div>
+    </div>
+    <div class="class-4">
+      <div class="class-4 second-class">Example 4</div>
+    </div>
+    <div class="class">
+      <div class="class second-class">Example 5</div>
+    </div>
+    <h3>Inheritance</h3>
+    <div id="parent">
+      <div class="child">Inheritance</div>
+    </div>
+    <h3>Rule Order</h3>
+    <div class="alert warning">Rule Order</div>
+    <h2>Add CSS to HTML</h2>
+    <h3>Inline CSS (Not recommended)</h3>
+    <div style="color: white; background-color: black">...</div>
+  </body>
+</html>

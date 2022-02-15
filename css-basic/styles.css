@@ -1,0 +1,154 @@
+/* Universal Selector */
+* {
+  color: purple;
+}
+
+/* Type Selector / Element selector */
+div {
+  color: blue;
+}
+
+/* Class Selector */
+.alert-text {
+  color: red;
+}
+
+/* ID Selector */
+#title {
+  background-color: red;
+}
+
+/* Grouping Selector */
+.read,
+.unread {
+  color: white;
+  background-color: black;
+}
+
+.read {
+  /* several unique declarations */
+  text-align: right;
+}
+
+.unread {
+  /* several unique declarations */
+  text-align: center;
+}
+
+/* Chaining Selector */
+.subsection.header {
+  color: red;
+}
+
+/* Descendant Combinator */
+.ancestor .contents {
+  /* some declarations */
+  color: red;
+}
+
+/* color and background-color */
+p {
+  /* hex example: */
+  color: #1100ff;
+  /* rgb example: */
+  color: rgb(100, 0, 127);
+  /* hsl example: */
+  color: hsl(15, 82%, 56%);
+}
+
+/* Typography Basics and text-align */
+.font-family {
+  font-family: "Times New Roman", sans-serif;
+}
+
+.font-size {
+  font-size: 22px;
+}
+
+.font-weight {
+  font-weight: bold;
+  font-weight: 700;
+}
+
+.text-align {
+  text-align: center;
+}
+
+img {
+  height: auto;
+  width: 500px;
+}
+
+/* Specificity example 1 */
+/* rule 1 */
+.subsection {
+  color: blue;
+}
+
+/* rule 2 */
+.main .list {
+  color: red;
+}
+
+/* Specificity example 2 */
+/* rule 1 */
+#subsection {
+  color: blue;
+}
+
+/* rule 2 */
+.main .list {
+  color: red;
+}
+
+/* Specificity example 3 */
+/* rule 1 */
+#subsection .list {
+  background-color: yellow;
+  color: blue;
+}
+
+/* rule 2 */
+#subsection .main .list {
+  color: red;
+}
+
+/* Specificity example 4 */
+/* rule 1 */
+.class-4.second-class {
+  font-size: 12px;
+}
+
+/* rule 2 */
+.class-4 .second-class {
+  font-size: 24px;
+}
+
+/* Specificity example 5 */
+/* rule 1 */
+.class.second-class {
+  font-size: 12px;
+}
+
+/* rule 2 */
+.class > .second-class {
+  font-size: 24px;
+}
+
+/* Inheritance */
+#parent {
+  color: red;
+}
+
+.child {
+  color: blue;
+}
+
+/* Rule Order */
+.alert {
+  color: red;
+}
+
+.warning {
+  color: yellow;
+}
